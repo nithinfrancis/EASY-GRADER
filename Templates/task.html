@@ -1,0 +1,140 @@
+﻿<head>
+       
+    <title>Easy Grader</title>
+   
+
+    <link type="text/css" href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+    <link type="text/css" href="{{ url_for('static', filename='css/bootstrap-responsive.min.css') }}" rel="stylesheet">
+    <link type="text/css" href="{{ url_for('static', filename='css/theme.css') }}" rel="stylesheet">
+    <link type="text/css" href="{{ url_for('static', filename='css/font-awesome.css') }}" rel="stylesheet">
+    <link type="text/css" href="{{ url_for('static', filename='css/c.css') }}" rel='stylesheet'>
+</head>
+<body>
+    <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".navbar-inverse-collapse">
+                    <i class="icon-reorder shaded"></i></a><a class="brand" href="{{ url_for('index') }}">EASY GRADER </a>
+                <div class="nav-collapse collapse navbar-inverse-collapse">
+                   
+                    
+                    
+                </div>
+                <!-- /.nav-collapse -->
+            </div>
+        </div>
+        <!-- /navbar-inner -->
+    </div>
+    <!-- /navbar -->
+    <div class="wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="span3">
+                    <div class="sidebar">
+                        <ul class="widget widget-menu unstyled">
+                            <li class="active"><a href="{{ url_for('index') }}">Dashboard
+                            </a></li>
+                            <li><a href="{{ url_for('task') }}">Notifications <b class="label orange pull-right">
+                                5</b> </a>
+                            </li>
+                            <li><a href="{{ url_for('competitions') }}">Competitions <b class="label green pull-right">
+                                0</b> </a></li>
+                            <li><a href="{{ url_for('practice') }}">Practice</a></li>
+                        </ul>
+                        <!--/.widget-nav-->
+                        
+                      
+                        <ul class="widget widget-menu unstyled">
+                            
+                            <li><a href="{{ url_for('login') }}">Logout </a></li>
+                        </ul>
+                    </div>
+                    <!--/.sidebar-->
+                </div>
+                    <!--/.span3-->
+                   
+					<div class="span9">
+						<div class="content">
+	
+							<div class="module message">
+								
+								<div class="module-body table">								
+	
+									<table class="table table-message">
+										<tbody>
+											<tr class="heading">
+												<td class="cell-icon"></td>
+												<td class="cell-title">Notification</td>
+												
+											</tr>
+											<tr class="task">
+												<td class="cell-icon"><i class="icon-checker high"></i></td>
+												<td class="cell-title"><div>SMART INDIA HACKATHON Essay competition Starts on 21-05-2019</div></td>
+												
+											</tr>
+											<tr class="task">
+												<td class="cell-icon"><i class="icon-checker"></i></td>
+												<td class="cell-title"><div>Gokul wins the FISAT Essay Championship</div></td>
+												
+											</tr>
+											<tr class="task">
+												<td class="cell-icon"><i class="icon-checker"></i></td>
+												<td class="cell-title"><div>You successfully registerd VAST competition.</div></td>
+												
+											</tr>
+											<tr class="task">
+												<td class="cell-icon"><i class="icon-checker"></i></td>
+												<td class="cell-title"><div>KTU 
+													TECH FEST Competition 
+													Registration is open now</div></td>
+												
+											</tr>
+											<tr class="task">
+												<td class="cell-icon"><i class="icon-checker"></i></td>
+												<td class="cell-title"><div>VAST Essay competition Starts on 
+													10-04-2019</div></td>
+												
+											</tr>
+											
+											
+											
+											
+											
+									
+										</tbody>
+									</table>
+	
+	
+								</div>
+								<div class="module-foot">
+								</div>
+							</div>
+							
+						</div><!--/.content-->
+					</div>
+                         
+                        
+                            <!--/.module-->
+                        </div>
+                        <!--/.content-->
+                    </div>
+                    <!--/.span9-->
+                </div>
+            </div>
+            <!--/.container-->
+        </div>
+        <!--/.wrapper-->
+        <div class="footer">
+            <div class="container">
+                <b class="copyright">&copy; 2019 Easy Grader </b>All rights reserved.
+            </div>
+        </div>
+        <script src="{{ url_for('static', filename='js/jquery-1.9.1.min.js') }}" type="text/javascript"></script>
+        <script src="{{ url_for('static', filename='js/jquery-ui-1.10.1.custom.min.js') }}" type="text/javascript"></script>
+        <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}" type="text/javascript"></script>
+        <script src="{{ url_for('static', filename='js/jquery.flot.js') }}" type="text/javascript"></script>
+        <script src="{{ url_for('static', filename='js/jquery.flot.resize.js') }}" type="text/javascript"></script>
+        <script src="{{ url_for('static', filename='js/common.js') }}" type="text/javascript"></script>
+        <script src="{{ url_for('static', filename='js/jquery.dataTables.js') }}"></script>
+		
+    </body>
